@@ -22,9 +22,22 @@ Yes, the critical section and lock only contains the shared variable. This is th
 
 ## 1.2 
 
-### 1.2.1
+### 1.2.2
 One of the threads are sleeping while the other is printing. Therefore the double dash can occur.
 
 <img src="images/2026-08-24_11-10.png" alt="Screenshot" width="500"> 
+
+### 1.2.3
+It is correct since the entire pattern is inside the critical locked section. However it is super inefficient and equals to having one process. 
+
+## 1.3
+
+### 1.3.1
+
+### 1.3.2
+
+The critcal section of the if statement and increment is locked and therefore we ensure that the number of people will never be above 15000.
+
+## 1.4
 
 
