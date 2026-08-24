@@ -45,3 +45,12 @@ The critcal section of the if statement and increment is locked and therefore we
 An example of something fitting the concurrency note and not the Goetz definitions is a gps. You need a lot of processes running at the same time, such as the gps, touchscreen input and route guidance.
 
 An example of hidden but not fairness are VM's. Each vm feels like it has it own resources, however the resources are not equally shared among tenants and thus contradicting with fairness.
+
+### 1.4.2
+
+**Inherent**
+Programming a robot. It must be able to have many parallel tasks running simultaneously to function properly.
+
+**Exploitation**
+Image loading. Loading multiple parts of the image concurrently to speed up the process for a more enjoyably experience. 
+Random forest algorithm. Make the trees independently from each other and speed up the process.
