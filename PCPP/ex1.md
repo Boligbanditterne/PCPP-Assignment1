@@ -54,3 +54,23 @@ Programming a robot. It must be able to have many parallel tasks running simulta
 **Exploitation**
 Image loading. Loading multiple parts of the image concurrently to speed up the process for a more enjoyably experience. 
 Random forest algorithm. Make the trees independently from each other and speed up the process.
+
+## 1.5
+
+### 1.5.1
+
+Ubuntu
+
+### 1.5.2
+
+Ubuntu, 12 cores, 24 gb ram.
+
+Cache architecture:
+L1: 32 KB data + 32 KB instruction per core
+L2: 512 KB unified per core
+L3: 4 MB unified shared cache
+Cache line: 64 bytes
+
+### 1.5.3
+
+2375 ns.
