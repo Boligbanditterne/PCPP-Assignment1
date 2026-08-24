@@ -23,6 +23,7 @@ Yes, the critical section and lock only contains the shared variable. This is th
 ## 1.2 
 
 ### 1.2.1
+One of the threads are sleeping while the other is printing. Therefore the double dash can occur.
 
 <img src="images/2026-08-24_11-10.png" alt="Screenshot" width="500"> 
 
