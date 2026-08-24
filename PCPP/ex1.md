@@ -40,4 +40,6 @@ The critcal section of the if statement and increment is locked and therefore we
 
 ## 1.4
 
+### 1.4.1
 
+An example of something fitting the concurrency note and not the Goetz definitions is a gps. You need a lot of processes running at the same time, such as the gps, touchscreen input and route guidance.
