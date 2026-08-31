@@ -1,0 +1,36 @@
+package exercises02;
+
+public class WriterTest {
+
+    public WriterTest() {
+        WriterProbFair m = new WriterProbFair();
+        final int numReadersWriters = 10;
+
+        for (int i = 0; i < numReadersWriters; i++) {
+
+            // start a reader
+            new Thread(() -> {
+                m.readLock();
+                System.out.println(" Reader " + Thread.currentThread().threadId() + " started reading");
+                // read
+                System.out.println(" Reader " + Thread.currentThread().threadId() + " stopped reading");
+                m.readUnlock();
+            }).start();
+
+            // start a writer
+            new Thread(() -> {
+                m.writeLock();
+                System.out.println(" Writer " + Thread.currentThread().threadId() + " started writing");
+                // write
+                System.out.println(" Writer " + Thread.currentThread().threadId() + " stopped writing");
+                m.writeUnlock();
+            }).start();
+
+        }
+    }
+
+    public static void main(String[] args) {
+        new WriterTest();
+    }
+
+}
